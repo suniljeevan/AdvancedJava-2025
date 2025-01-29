@@ -33,10 +33,11 @@ class ShapeImpl extends Shape {
 	
 }
 public class TEST3 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ShapeImpl ob = new ShapeImpl(3);
+		ob.area();
+		ob.volume();
+		ob.showRules();
 	}
 
 }
