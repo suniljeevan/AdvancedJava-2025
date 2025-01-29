@@ -13,7 +13,7 @@ abstract class Shape {
 }
 class ShapeImpl extends Shape {
 	int dimension;
-    //alt shift shift
+    //alt shift s
 	public ShapeImpl(int dimension) {
 		super();
 		this.dimension = dimension;
