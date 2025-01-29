@@ -72,10 +72,12 @@ class Employee extends person {
 	
 }
 public class TEST2 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+         Employee ob=new Employee("888899991111","Sumit",30,"PUNIV01666","Professor",2500000);
+         System.out.println(ob.getName());
+         System.out.println(ob.getDesignation());
+         System.out.println(ob.getSalary());
+         
 	}
 
 }
