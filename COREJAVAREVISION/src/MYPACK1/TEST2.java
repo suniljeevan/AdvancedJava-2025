@@ -36,7 +36,41 @@ class person {
 		this.age = age;
 	}
 }
-
+class Employee extends person {
+	private String empId;
+	private String designation;
+	private double salary;
+	//alt shift s to generate two constructors 
+	// and getter setter
+	public Employee(String aadharId, String name, int age, String empId, String designation, double salary) {
+		super(aadharId, name, age);
+		this.empId = empId;
+		this.designation = designation;
+		this.salary = salary;
+	}
+	public Employee(String aadharId, String name, int age) {
+		super(aadharId, name, age);
+	}
+	public String getEmpId() {
+		return empId;
+	}
+	public void setEmpId(String empId) {
+		this.empId = empId;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+}
 public class TEST2 {
 
 	public static void main(String[] args) {
