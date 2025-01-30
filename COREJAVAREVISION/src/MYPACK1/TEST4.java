@@ -23,8 +23,27 @@ class Circle implements Shappe {
 	//Empty Implementation
 	//Partial Implementation is not allowed
 	 public void volume() {}
-	
-	
+}
+class Cylinder implements Shappe {
+	private double radious,height;
+	//alt shift s	
+	 public double getRadious() {
+		return radious;
+	}
+	public void setRadious(double radious) {
+		this.radious = radious;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	//Empty Implementation
+	public void area() {}
+	public void volume() {
+		System.out.println("Sphere Volume: "+3.14*radious*radious*height);
+	}
 }
 public class TEST4 {
 
