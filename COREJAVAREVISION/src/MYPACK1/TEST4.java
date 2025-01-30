@@ -10,10 +10,18 @@ interface Shappe {
 }
 class Circle implements Shappe {
 	private double radious;
-	public void area() {
-		
-		
+	//alt shift s
+	public double getRadious() {
+		return radious;
 	}
+	public void setRadious(double radious) {
+		this.radious = radious;
+	}
+	public void area() {
+		System.out.println("Circle Area: "+3.14*radious*radious);		
+	}
+	//Empty Implementation
+	//Partial Implementation is not allowed
 	 public void volume() {}
 	
 	
