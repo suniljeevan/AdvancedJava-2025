@@ -27,12 +27,13 @@ class Task_primecheck implements Runnable {
 	}
 }
 public class TEST5 {
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Exception {
 		Task_primecheck task=new Task_primecheck();
          Thread t1=new Thread(task,"first");
          Thread t2=new Thread(task,"second");
          t1.start();
          t2.start();
+         Thread.sleep(150000);
          System.out.println("main thread ended");
 	}
 
