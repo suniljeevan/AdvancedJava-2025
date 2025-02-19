@@ -2,7 +2,7 @@
 import java.io.*;
 public class Test4 {
 	public static void main(String[] args)throws Exception {
-		File file=new File("D:\\Presidency\\javanotes.txt");
+		File file=new File("C:\\Presidency\\javanotes.txt");
 		FileReader fr=new FileReader(file);
 		BufferedReader br=new BufferedReader(fr);
 		String line;
