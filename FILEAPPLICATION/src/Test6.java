@@ -40,6 +40,14 @@ public class Test6 {
 		}
 		System.out.println("No. of sentences is "+cs);
        fr3.close(); br2.close();
+       //Displaying the content of the file with line number
+       FileReader reader=new FileReader(file);
+       BufferedReader b=new BufferedReader(reader);
+       int lineno=0;
+       while((line=b.readLine())!=null) {
+    	   lineno++;
+    	   System.out.println(lineno+"\t"+line);
+       }
+       reader.close();b.close();
 	}
-
 }
