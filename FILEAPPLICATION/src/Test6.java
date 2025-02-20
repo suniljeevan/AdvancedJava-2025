@@ -35,7 +35,7 @@ public class Test6 {
 		FileReader fr3=new FileReader(file);
 		BufferedReader br2=new BufferedReader(fr3);
 		while((line=br2.readLine())!=null) {
-			String[] dots=line.split(".");
+			String[] dots=line.split("[!?.:]+");
 			cs=cs+dots.length;
 		}
 		System.out.println("No. of sentences is "+cs);
