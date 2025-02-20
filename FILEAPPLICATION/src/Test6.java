@@ -30,7 +30,16 @@ public class Test6 {
 		System.out.println("No. of characters is "+cc);
 		System.out.println("No. of words is "+cw);
 		fr2.close();
-
+		br.close();
+		int cs=0;
+		FileReader fr3=new FileReader(file);
+		BufferedReader br2=new BufferedReader(fr3);
+		while((line=br2.readLine())!=null) {
+			String[] dots=line.split(".");
+			cs=cs+dots.length;
+		}
+		System.out.println("No. of sentences is "+cs);
+       fr3.close(); br2.close();
 	}
 
 }
