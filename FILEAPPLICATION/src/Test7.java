@@ -37,9 +37,27 @@ public class Test7 {
 		FileOutputStream output = new FileOutputStream(foldername+"\\"+filename+".dat");
 		System.out.println("file created");
 		String header = "Name\tRegdno\tEssaysubmitted";
+		
 		byte[] arrheader=header.getBytes();
 		output.write(arrheader);
-		System.out.println("file written");
+		String record=new String();
+		String name;
+		int regdno; 
+		char submitted,ch='n';
+		do {
+			System.out.println("Enter name regdno, submitted or not");
+			name=sc.next();
+			regdno=sc.nextInt();
+			submitted=sc.next().charAt(0);
+			String newrecord=record.concat("\n").concat(name).concat("\t").concat(String.valueOf(regdno)).concat("\t").concat(String.valueOf(submitted));
+			arrheader=newrecord.getBytes();
+			output.write(arrheader);
+			System.out.println("Enter y for continue else press n");
+			ch=sc.next().charAt(0);
+		}while(ch!='n');
+
+		System.out.println("All contents to file written");
+		
 		output.close();
 
 	}
