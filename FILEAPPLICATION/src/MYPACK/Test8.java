@@ -1,5 +1,8 @@
+package MYPACK;
+//serialize  student object
 import java.io.*;
 class Student implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private String sid;
 	private String sname;
 	private double cgpa;
