@@ -2,7 +2,7 @@
 package MYPACK;
 import java.sql.*;
 import java.util.Scanner;
-public class TEST3 {
+public class TESTInsertDynamic {
 	public static void main(String[] args) throws Exception{
 		//Step 1 - loading the driver
 		Class.forName("com.mysql.jdbc.Driver");
