@@ -14,4 +14,14 @@
     <servlet-name>AddStudent</servlet-name>
     <url-pattern>/add</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateStudent</display-name>
+    <servlet-name>UpdateStudent</servlet-name>
+    <servlet-class>controller.UpdateStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudent</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
 </web-app>
