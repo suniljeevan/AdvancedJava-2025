@@ -33,6 +33,10 @@ public class AddStudent extends HttpServlet {
         	int r=p.executeUpdate();
         	response.setContentType("text/html");
         	response.getWriter().print("<h2>"+"Record Inserted"+"</h2>");
+        	// calling jsp from servlet
+        	response.sendRedirect("show.jsp");
+        	// or 
+        	//request.getRequestDispatcher("show.jsp").forward(request, response);
         }catch(Exception e) {
         	System.out.println(e);
         }
